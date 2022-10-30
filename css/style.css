@@ -1,0 +1,251 @@
+:root {
+    --fuenteHeading: 'PT Sans', sans-serif;
+   --fuentParrafos: 'Open Sans', sans-serif;
+    --blanco: #FFFFFF;
+    --gris: #212121;
+    --negro: #000;
+    --claro: #e1e1e1;
+}
+
+html {
+    box-sizing: border-box;
+    font-size:  62.5%; /* 1 rem = 10px */;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+
+  a {
+    text-decoration: none;
+  }
+  .contenedor {
+    max-width: 1200px;
+    width: 95%;
+    margin: 0 auto;
+}
+
+h1{
+    font-size: 4.5rem;
+    font-family: var(--fuenteHeading);
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+}
+ h2 {
+    font-size: 3rem;
+}
+ h3 {
+    font-size: 3.2rem;
+    font-weight: normal;
+}
+ h4 {
+    font-size: 2.8rem;
+}
+ body {
+    font-size: 1.6rem;
+    line-height: 2;
+    font-family: var(--fuentParrafos);
+}
+.n-m {
+    margin: 0;
+}
+.t-center{
+    text-align: center;
+}
+.centrar{
+    margin: auto auto  ;
+}
+
+
+
+  /* header */
+.header{
+    background: linear-gradient(rgba(5, 7, 12, 0.65),rgba(5, 7, 12, 0.65)),
+     url(https://concepto.de/wp-content/uploads/2014/08/programacion-2-e1551291144973.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 63rem;
+}
+
+.navegacion{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--blanco);
+    
+
+}
+ .active {
+    background:var(--negro);
+    opacity: .8;
+    position: fixed;
+    width: 100%;
+    
+}
+.active .navegacion_principal a{
+    
+    opacity: (1);
+}
+
+.navegacion_principal {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.navegacion_principal a {
+    color: var(--blanco);
+    font-size: 1.8rem;
+
+}
+/*  */
+.link a{
+    position: relative;
+}
+.link a:after{
+    content: "";
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 100%;
+    background: var(--blanco);
+    /* animacion de derecha a izquierda */
+   transform-origin: right;
+   transform: scaleX(0);
+   transition: transform 0.2s ease-in-out;
+}
+.link a:hover:after{
+   transform-origin: left;
+   transform: scale(1);
+}
+
+.titulo span{
+    font-weight: normal;
+}
+
+.info {
+    color: var(--blanco);
+    text-align: center;
+    margin-top: -40rem;
+    margin-bottom: 30rem ;
+    
+}
+
+/* skill */
+.codes {
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.grids{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 5rem;
+    margin-left: 6rem;
+}
+
+.lenguaje{
+    width: 100%;
+}
+
+
+
+
+/* footer */
+.footer{
+    background-color: var(--gris);
+    padding: 2rem 0 1rem 0;
+}
+.redes{
+    display:flex ;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.derechos{
+    color: var(--blanco);
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+
+.redes a:hover{
+    margin-top: -8px;
+    transform: scale(1.3);
+ }
+ 
+/* formulario */
+
+.formulario input, textarea{
+    display: block;
+    width: 100%;
+    border: 1px solid var(--claro);
+    padding: 1rem;
+    border-radius: 2rem;
+    margin-bottom: 2rem;
+}
+.formulario label {
+    
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+.formulario textarea{
+    height: 20rem;
+}
+
+.formulario{
+    margin-bottom: 5rem;
+    background-color: rgba(0,0,0,0.2);
+    padding: 5rem;
+    border-radius: 2rem;
+}
+
+ 
+
+
+
+
+
+/* From uiverse.io by @alexroumi */
+button {
+    padding: 15px 25px;
+    border: unset;
+    border-radius: 15px;
+    color: #212121;
+    z-index: 1;
+    background: #e8e8e8;
+    position: relative;
+    font-weight: 1000;
+    font-size: 17px;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms;
+    overflow: hidden;
+    cursor: pointer;
+   }
+   
+   button::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0;
+    border-radius: 15px;
+    background-color: #212121;
+    z-index: -1;
+    -webkit-box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    box-shadow: 4px 8px 19px -3px rgba(0,0,0,0.27);
+    transition: all 250ms
+   }
+   
+   button:hover {
+    color: #e8e8e8;
+   }
+   
+   button:hover::before {
+    width: 100%;
+   }
