@@ -16,18 +16,24 @@
 </head>
 <body>
 
-
     <header class="header">
         <div class="flex ">
             <div class="navegacion contenedor">
-                <div class="titulo ">
-                    <h1>< <span>HA</span> ></h1> 
+                <div class="titulo">
+                    <svg id="b613d120-e911-4f71-b7bc-d9b9e1bbdc6f" fill="#FFF" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 93.13 75.2">
+                        <rect class="fill-current text-brand" x="-3.43" y="39.29" width="32.19" height="8.78" rx="4.39" transform="translate(-27.18 21.75) rotate(-45)" />
+                        <rect class="fill-current text-brand" x="-3.43" y="22.74" width="32.19" height="8.78" rx="4.39" transform="translate(22.89 -1.01) rotate(45)"/>
+                        <rect class="fill-current text-brand" x="64.37" y="22.74" width="32.19" height="8.78" rx="4.39" transform="translate(156.55 -10.59) rotate(135)"/>
+                        <rect class="fill-current text-brand" x="64.37" y="39.29" width="32.19" height="8.78" rx="4.39" transform="translate(106.48 131.47) rotate(-135)"/>
+                        <rect class="fill-current text-brand" x="41.93" y="-1.17" width="8.78" height="77.54" rx="4.39" transform="translate(11.31 -10.71) rotate(15)"/>
+                    </svg>
+                    <p class="title"> Hector Alejandro</p>
                 </div>
                 <nav class="navegacion_principal link">
-                    <a href="#" >Home</a>
-                    <a href="#">About</a>
-                    <a href="#">Proyects</a>
-                    <a href="#">Contact</a>
+                    <a href="#">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#proyects">Proyects</a>
+                    <a href="#contacto">Contact</a>
                 </nav>
             </div>
         </div>
@@ -42,11 +48,11 @@
 
 
     <main class="contenedor">
-        <section class="skill">
+        <section id="about" class="skill">
             <h2 class="t-center">About</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor aspernatur quia officia officiis nam sunt vero, omnis harum laborum labore repellendus, pariatur inventore ea. Iusto cum quasi voluptatum illum sit.</p>
+            <p>Hola mi nombre es Hector Alejandro, actualmente soy estudiante de la carrera de Ingenieria en Sistemas Computacionales,
+                me apaciona la programacion  .</p>
             <a href="CV_HectorRodriguez.pdf" class="btn-descarga " download ><button >Download CV</button></a>
-            
             <div class="codes">
                 <div>
                     <h3 class="t-center">Frond-End</h3>
@@ -75,23 +81,27 @@
                     </div>
                 </div>
             </div>
-
-            
         </section>
 
        
-        <section class="proyects">
+        <section id="proyects" class="proyects">
             <h2 class="t-center">Proyects</h2>
             <div>
-                
+                <a href="https://croquis-itslp.netlify.app/" target="_blank">
+                    <div class="cardP">
+                        <div class="card-image img-croquis"></div>
+                          <div class="card-description">
+                            <p class="text-title">Croquis ITSLP</p>
+                            <p class="text-body">Pagina web de croquis universitario para ayudar alumnos a encontrar su aula, edificio y departamento.</p>
+                          </div>
+                    </div>
+                </a>
             </div>
         </section>
 
 
         <section id="contacto">
             <h3 class="t-center">Contacto</h3>
-            
-
             <form action="" class="formulario">
                 <div class="campo">
                     <label for="nombre">Nombre</label>
@@ -115,7 +125,7 @@
 
 
     <footer class="footer">
-        <div class="redes">
+        <!-- <div class="redes">
             <a href="">
                 <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="32" height="32" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffffff" fill="none" stroke-linecap="round" stroke-linejoin="round">
                     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
@@ -146,7 +156,7 @@
                     <path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5" />
                   </svg>
             </a>
-        </div>
+        </div> -->
         <p class="derechos">@ 2022 Copyright: Hector Alejandro Rodriguez</p>
     </footer>
 
